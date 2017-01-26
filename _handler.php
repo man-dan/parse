@@ -14,8 +14,7 @@
     curl_setopt($ch,CURLOPT_PROXY, false);
     $file = curl_exec($ch);
     curl_close($ch);
-    $my = $file;
-    $json = json_decode($my,true);
+    $json = json_decode($file,true);
     $data = array();
     foreach($json['content']['goods'] as $value)
     {
