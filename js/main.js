@@ -6,6 +6,7 @@ $(document).ready(function(){
             url: "_handler.php",
             success: function(html){
                 $('#parse_content').html(html);
+                $('#parse').hide().show();
             }
         });
         return false;
